@@ -1,0 +1,111 @@
+@import url(nullstyle.css);
+
+body {
+	font-family: 'Pathway Extreme', sans-serif;
+	background-image: url("/01/img/bg.jpg");
+	padding: 100px 0;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.container {
+	width: 800px;
+	min-height: 800px;
+	border: 5px solid white;
+	margin: 0 auto;
+	background: white;
+}
+
+.header {
+	display: flex;
+	height: 150px;
+}
+
+.title-block {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 100%;
+	font-size: 30px;
+	background: url(/01/img/title_block.jpg) no-repeat center center / cover;
+	color: aliceblue;
+	margin-right: 10px;
+}
+
+.title-block::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
+
+.title {
+	position: relative;
+	z-index: 1;
+}
+
+.userpic {
+	display: flex;
+	width: 20%;
+	background: url(/01/img/avatar.jpg) no-repeat center center / cover;
+}
+
+.nav ul {
+	display: flex;
+	background: rgb(146, 142, 142);
+	margin: 10px 0;
+
+}
+
+.nav li {}
+
+
+.nav li a {
+	display: flex;
+	padding: 20px;
+	color: black;
+	font-weight: bold;
+	border-right: 1px solid #000302;
+	transition: background .5s ease;
+}
+
+.nav li a:hover {
+	background: blanchedalmond;
+}
+
+.content-wrapper {
+	display: flex;
+
+}
+
+.content {
+	width: 70%;
+	padding: 20px;
+}
+
+.sidebar {
+	width: 20%;
+	padding: 20px;
+
+}
+
+.skills li {
+	margin: 10px 0;
+	transition: transform .5s ease;
+	cursor: pointer;
+
+}
+
+.skills li:hover {
+	transform: translateX(10px);
+}
